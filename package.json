@@ -1,13 +1,13 @@
 {
   "name": "vscode-config-codepunkt",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "Generates opinionated vscode workspace settings for Javascript projects",
-  "bin": {
-    "vscode-init": "./init.js"
-  },
   "repository": "https://github.com/codepunkt/vscode-config-codepunkt",
   "author": "Christoph Werner <christoph+github@codepunkt.de>",
   "license": "MIT",
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js"
+  },
   "dependencies": {
     "eslint-config-codepunkt": "^1.0.3",
     "fs-extra": "^2.1.2",
