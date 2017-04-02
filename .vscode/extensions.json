@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "cssho.vscode-svgviewer",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "jpoissonnier.vscode-styled-components",
+    "kumar-harsh.graphql-for-vscode",
+    "msjsdiag.debugger-for-chrome",
+    "RobinMalfait.prettier-eslint-vscode"
+  ]
+}
