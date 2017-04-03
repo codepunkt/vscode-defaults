@@ -1,13 +1,30 @@
 {
-  "name": "vscode-config-codepunkt",
-  "version": "2.0.1",
-  "description": "Generates opinionated vscode workspace settings for Javascript projects",
+  "name": "vscode-defaults",
+  "version": "1.0.0",
+  "description": "Generates opinionated Visual Studio Code workspace settings for JavaScript and React projects",
   "repository": "https://github.com/codepunkt/vscode-config-codepunkt",
   "author": "Christoph Werner <christoph+github@codepunkt.de>",
   "license": "MIT",
   "scripts": {
     "postinstall": "node scripts/postinstall.js"
   },
+  "keywords": [
+    "vscode",
+    "defaults",
+    "settings",
+    "extensions",
+    "eslint",
+    "prettier",
+    "linting",
+    "linter",
+    "formatting",
+    "autoformatter",
+    "visual studio code",
+    "javascript",
+    "react",
+    "standard",
+    "standard style"
+  ],
   "dependencies": {
     "eslint-config-codepunkt": "^1.0.3",
     "fs-extra": "^2.1.2",
