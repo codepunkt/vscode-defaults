@@ -1,12 +1,12 @@
 {
   "name": "vscode-defaults",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Generates opinionated Visual Studio Code workspace settings for JavaScript and React projects",
   "repository": "https://github.com/codepunkt/vscode-config-codepunkt",
   "author": "Christoph Werner <christoph+github@codepunkt.de>",
   "license": "MIT",
   "bin": {
-    "vscode-defaults": "./bin/cli"
+    "vscode-defaults": "./bin/cli.js"
   },
   "scripts": {
     "postinstall": "node scripts/postinstall.js"
