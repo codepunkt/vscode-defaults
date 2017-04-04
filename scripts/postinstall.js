@@ -1,3 +1,3 @@
 var createDefaults = require('../src/createDefaults')
 
-createDefaults(false)
+createDefaults()

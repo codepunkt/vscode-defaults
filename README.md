@@ -37,7 +37,7 @@ yarn upgrade vscode-defaults
 If you have upgraded your version of `vscode-defaults` and would like to have your previously generated files overwritten by the new version, you can use the `--force` option of the CLI
 
 ```
-node node_modules/.bin/vscode-defaults --force
+node_modules/.bin/vscode-defaults --force
 ```
 
 ## Requirements

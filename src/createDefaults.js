@@ -1,17 +1,23 @@
 var path = require('path')
 var fs = require('fs-extra')
 
-var source = path.resolve.bind(path, process.cwd())
-var target = path.resolve.bind(path, process.cwd(), '..', '..')
+module.exports = function (options) {
+  options = options || {}
+  // options.basedir = options.basedir || path.resolve(__dirname, '..')
 
-function createCopy (overwrite) {
-  return function (file) {
-    fs.copySync(source(file), target(file), { overwrite: !!overwrite })
+  var source = path.resolve.bind(path, __dirname, '..')
+  var target = path.resolve.bind(path, __dirname, '..', '..', '..')
+
+  function createCopy (overwrite) {
+    return function (file) {
+      fs.copySync(source(file), target(file), { overwrite: !!overwrite })
+    }
   }
-}
 
-module.exports = function (overwrite) {
-  fs.renameSync(source('gitignore'), source('.gitignore'))
+  if (!fs.existsSync(source('.gitignore'))) {
+    fs.renameSync(source('gitignore'), source('.gitignore'))
+  }
+
   var files = [ '.editorconfig', '.eslintrc', '.gitignore', '.vscode' ]
-  files.forEach(createCopy(!!overwrite))
+  files.forEach(createCopy(!!options.overwrite))
 }
