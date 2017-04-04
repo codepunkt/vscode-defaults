@@ -10,7 +10,7 @@ Both linting and autoformatting are largely based on [JavaScript Standard Style]
 
 ## Installation
 
-[ESLint][2] is required as a peer dependency. To install this package, the [Yarn][5] command is:
+[ESLint][2] is required as a peer dependency. To install this package, the [Yarn][5] command is
 
 ```
 yarn add --dev eslint vscode-defaults
@@ -22,19 +22,25 @@ On installation, this will copy a `.vscode` workspace settings folder, `.gitigno
 
 Open your project directory in [VSCode][1] and install the recommended plugins. Reload [VSCode][1] afterwards.
 
-### Updating
+### Dealing with changes
 
-If you want to upgrade your version of `vscode-defaults` in a project that already includes auto-generated defaults, first run
+It is advised that you let this package manage your projects `.vscode` folder as well as the `.editorconfig`, `.eslintrc` and `.gitignore` files. If you want to do changes in any of them, create a pull request to this project with a description of your use case and changes.
+
+### Updating and overwriting files with new version
+
+To upgrade your version of `vscode-defaults` run
 
 ```
 yarn upgrade vscode-defaults
 ```
 
-to upgrade the package.
+If you have upgraded your version of `vscode-defaults` and would like to have your previously generated files overwritten by the new version, you can use the `--force` option of the CLI
 
+```
+node node_modules/.bin/vscode-defaults --force
+```
 
-
-### Requirements
+## Requirements
 
 - Node.js `^6.9.4` or newer
 - ESLint `^3.19.0` or newer
