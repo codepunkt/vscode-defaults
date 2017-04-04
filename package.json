@@ -1,6 +1,6 @@
 {
   "name": "vscode-defaults",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Generates opinionated Visual Studio Code workspace settings for JavaScript and React projects",
   "repository": "https://github.com/codepunkt/vscode-config-codepunkt",
   "author": "Christoph Werner <christoph+github@codepunkt.de>",
