@@ -18,9 +18,21 @@ yarn add --dev eslint vscode-defaults
 
 If you don't have Yarn yet, [install it first][6].
 
-On installation, this will copy a `.vscode` workspace settings folder, `.gitignore`, `.editorconfig` and `.eslintrc` files to your project.
+On installation, this will copy a `.vscode` workspace settings folder, `.gitignore`, `.editorconfig` and `.eslintrc` files to your project. If any of these exist, the existing versions will be kept.
 
 Open your project directory in [VSCode][1] and install the recommended plugins. Reload [VSCode][1] afterwards.
+
+### Updating
+
+If you want to upgrade your version of `vscode-defaults` in a project that already includes auto-generated defaults, first run
+
+```
+yarn upgrade vscode-defaults
+```
+
+to upgrade the package.
+
+
 
 ### Requirements
 
