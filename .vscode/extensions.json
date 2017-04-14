@@ -2,6 +2,7 @@
   "recommendations": [
     "christian-kohler.npm-intellisense",
     "christian-kohler.path-intellisense",
+    "codepunkt.vscode-oldhope-italics",
     "cssho.vscode-svgviewer",
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
