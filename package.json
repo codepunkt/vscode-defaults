@@ -1,6 +1,6 @@
 {
     "name": "vscode-defaults",
-    "version": "1.5.1",
+    "version": "1.6.0",
     "description": "Generates opinionated Visual Studio Code workspace settings for JavaScript and React projects",
     "repository": "https://github.com/codepunkt/vscode-config-codepunkt",
     "author": "Christoph Werner <christoph+github@codepunkt.de>",
@@ -31,8 +31,8 @@
     "dependencies": {
         "eslint-config-codepunkt": "^1.0.3",
         "fs-extra": "^2.1.2",
-        "prettier": "^0.22.0",
-        "prettier-eslint": "^4.4.0",
+        "prettier": "^1.3.0",
+        "prettier-eslint": "^6.1.2",
         "yargs": "^7.0.2"
     },
     "peerDependencies": {
